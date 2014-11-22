@@ -259,7 +259,12 @@
   <xsl:param name="body.end.indent">0</xsl:param> <!-- text recess from right -->
   <xsl:param name="region.before.extent">10mm</xsl:param> <!-- height of page header -->
   <xsl:param name="region.after.extent">10mm</xsl:param> <!-- height of page footer -->
-  <xsl:param name="header.column.widths">1 5 1</xsl:param>
+  <xsl:param name="header.column.widths">2 5 2</xsl:param>
+  <xsl:param name="footer.column.widths">5 1 5</xsl:param>
+  <xsl:attribute-set name="footer.content.properties">
+    <xsl:attribute name="font-family">Helvetica</xsl:attribute>
+    <xsl:attribute name="font-size">8pt</xsl:attribute>
+  </xsl:attribute-set>
 
   <!--
     Table of Contents

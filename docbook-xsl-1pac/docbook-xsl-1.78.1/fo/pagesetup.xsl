@@ -2746,6 +2746,14 @@
 -->
 
   <fo:block>
+    <xsl:choose>
+      <xsl:when test="$double.sided = 0 and $position='right'">
+        <fo:external-graphic src="docbook-xsl-1pac/1pac-logo.png"/>
+      </xsl:when>
+    </xsl:choose>
+  </fo:block>
+
+  <fo:block>
 
     <!-- sequence can be odd, even, first, blank -->
     <!-- position can be left, center, right -->
@@ -3089,6 +3097,14 @@
     <xsl:value-of select="$gentext-key"/>
   </fo:block>
 -->
+
+  <fo:block>
+    <xsl:choose>
+      <xsl:when test="$double.sided = 0 and $position='left'">
+        Copyright 2014 1PAC. INC. All Right Reserved.
+      </xsl:when>
+    </xsl:choose>
+  </fo:block>
 
   <fo:block>
     <!-- pageclass can be front, body, back -->
