@@ -17,7 +17,7 @@
   
     %docbook-style-xsl-version% represents the version installed on the system.
   -->
-  <xsl:import href="http://docbook.sourceforge.net/release/xsl/current/fo/docbook.xsl"/>
+  <xsl:import href="docbook-xsl-1.78.1/fo/docbook.xsl"/>
   <xsl:import href="common.xsl"/>
   <xsl:import href="highlight.xsl"/>
   <xsl:import href="callouts.xsl"/>
