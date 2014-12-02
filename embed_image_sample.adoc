@@ -1,3 +1,6 @@
+= 文書タイトル
+©1PAC.INC.
+
 == 画像埋め込みのサンプル
 
 :cacoo_does_download_contents: true
