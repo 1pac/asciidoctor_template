@@ -548,7 +548,7 @@ Defaults to the context node.</para>
 
   <xsl:apply-templates select="$node//firstname[1]"/>
 
-  <xsl:text> [FAMILY Given]</xsl:text>
+  <xsl:text></xsl:text>
 </xsl:template>
 
 <xsl:template name="person.name.last-first">
