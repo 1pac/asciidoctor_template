@@ -1,0 +1,130 @@
+font:
+  catalog:
+    KaiGen Gothic JP:
+      normal:      KaiGenGothicJP-Regular.ttf
+      bold:        KaiGenGothicJP-Bold.ttf
+      italic:      KaiGenGothicJP-Regular-Italic.ttf
+      bold_italic: KaiGenGothicJP-Bold-Italic.ttf
+    Roboto Mono:
+      normal:      RobotoMono-Regular.ttf
+      bold:        RobotoMono-Bold.ttf
+      italic:      RobotoMono-Italic.ttf
+      bold_italic: RobotoMono-BoldItalic.ttf
+  fallbacks:
+    - KaiGen Gothic JP
+
+base:
+  #align: justify
+  # color as hex string (leading # is optional)
+  font_color: 333333
+  font_family: 'KaiGen Gothic JP'
+  # choose one of these font_size/line_height_length combinations
+  font_size: 10.5
+  # correct line height for Noto Serif metrics
+  line_height_length: 12
+  line_height: $base_line_height_length / $base_font_size
+  font_size_large: round($base_font_size * 1.25)
+  font_size_small: round($base_font_size * 0.85)
+  font_size_min: $base_font_size * 0.75
+  #font_style: normal
+  border_color: eeeeee
+  border_radius: 4
+  border_width: 0.5
+
+header:
+  font_size: $base_font_size_small
+  font_color: $base_font_color
+  border_color: dddddd
+  border_width: 0.5
+  height: 8mm
+  padding: [0,0,0,0]
+  valign: bottom
+  image_valign: 50
+  recto_content:
+    left: '{document-title}'
+    right: image:logo.png[width="60"]
+  verso_content:
+    left: '{document-title}'
+
+vertical_rhythm: $base_line_height_length
+horizontal_rhythm: $base_line_height_length
+
+heading:
+  align: left
+  #font_color: 000099
+  #font_color: $base_font_color
+  font_color: A13C2B
+  font_family: $base_font_family
+  font_style: bold
+  # h1 is used for part titles (book doctype only)
+  h1_font_size: floor($base_font_size * 2.6)
+  # h2 is used for chapter titles (book doctype only)
+  h2_font_size: floor($base_font_size * 2.15)
+  h3_font_size: round($base_font_size * 1.7)
+  h4_font_size: $base_font_size_large
+  h5_font_size: $base_font_size
+  h6_font_size: $base_font_size_small
+  #line_height: 1.4
+  # correct line height for Noto Serif metrics (comes with built-in line height)
+  line_height: 1
+  margin_top: $vertical_rhythm * 0.4
+  margin_bottom: $vertical_rhythm * 0.9
+
+literal:
+  font_family: $base_font_family
+  font_color:  ff7777
+  font_style:  bold
+
+code:
+  #font_family: $base_font_family
+  font_family: 'KaiGen Gothic JP'
+  font_size: 9
+  background_color: f9f9f9
+
+table:
+  background_color: $page_background_color
+  head_background_color: 777777
+  head_font_color: f0f0f0
+  head_font_style: bold
+  #body_background_color: <hex value>
+  body_stripe_background_color: f0f0f0
+  foot_background_color: f0f0f0
+  border_color: 777777
+  border_width: $base_border_width
+  cell_padding: 7
+
+toc:
+  indent: $horizontal_rhythm
+  line_height: 2.0
+  dot_leader:
+    font_color: a9a9a9
+
+# NOTE in addition to footer, header is also supported
+footer:
+  font_size: $base_font_size_small
+  # NOTE if background_color is set, background and border will span width of page
+  border_color: dddddd
+  border_width: 0.25
+  height: $base_line_height_length * 2.5
+  line_height: 1
+  padding: [$base_line_height_length / 2, 1, 0, 1]
+  vertical_align: top
+  #image_vertical_align: <alignment> or <number>
+  # additional attributes for content:
+  # * {page-count}
+  # * {page-number}
+  # * {document-title}
+  # * {document-subtitle}
+  # * {chapter-title}
+  # * {section-title}
+  # * {section-or-chapter-title}
+  recto:
+    left:
+      content: '© 1PAC. INC.'
+    right:
+      content: '{page-number}'
+  verso:
+    left:
+      content: '© 1PAC. INC.'
+    right:
+      content: '{page-number}'
