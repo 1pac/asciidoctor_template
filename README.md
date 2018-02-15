@@ -12,10 +12,11 @@
 
 
 ## Setup
-下記コマンドで必要な Gem をインストールします
 
-* `bundle install --path vendor/bundle -j4 --binstubs=vendor/bin`
-
+1. 下記コマンドで必要な Gem をインストールします
+    * `bundle install --path vendor/bundle -j4 --binstubs=vendor/bin`
+2. 日本語フォントをインストールします。
+    * `bundle exec asciidoctor-pdf-cjk-kai_gen_gothic-install`
 
 ## Directory structure
 
