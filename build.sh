@@ -1,5 +1,6 @@
 #!/bin/sh -e
 
+start_time=`date +%s`
 echo '# BEGIN ########################################'
 
 if [ "${TARGET-undef}" = "undef" ]; then
@@ -21,4 +22,8 @@ find ./src -name "diag-*.png" | xargs -I{} rm -fv {}
 
 set +x
 
+end_time=`date +%s`
+time=$((end_time - start_time))
+
+echo '# Processing time:' $time 'sec'
 echo '# DONE #########################################'
