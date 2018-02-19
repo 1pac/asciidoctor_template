@@ -1,0 +1,22 @@
+= スライド用サンプル
+:doctype: book
+:pdf-stylesdir: themes
+:pdf-style: slide
+:imagesoutdir: src/slide_sample/assets
+:imagesdir: src/slide_sample/assets
+:icons: font
+:authorinitials: 1PAC. INC. 
+{authorinitials}
+
+== はじめに
+
+サンプルファイルです。
+
+* 項目１
+* 項目２
+* 項目３
+
+== 画像のサンプル
+
+image:v_shaped_model.png[] 
+

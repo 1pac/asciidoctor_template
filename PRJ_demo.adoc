@@ -1,11 +1,10 @@
-Asciidoctor Demo
-================
+= Asciidoctor Demo
 :description: A demo of Asciidoctor. This document +
               exercises numerous features of AsciiDoc +
               to test Asciidoctor compliance.
 :doctype: book
-:pdf-page-size: A4
-:pdf-page-layout: portrait
+:pdf-stylesdir: themes
+:pdf-style: basic
 :imagesoutdir: src/demo/assets
 :imagesdir: src/demo/assets
 :sectnums:
