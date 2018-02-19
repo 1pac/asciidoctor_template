@@ -1,5 +1,5 @@
 page:
-  layout: portrait
+  layout: landscape
   size: A4
 
 font:
@@ -23,17 +23,17 @@ base:
   font_color: 333333
   font_family: 'KaiGen Gothic JP'
   # choose one of these font_size/line_height_length combinations
-  font_size: 10.5
+  font_size: 18.0
   # correct line height for Noto Serif metrics
-  line_height_length: 12
+  line_height_length: 22
   line_height: $base_line_height_length / $base_font_size
   font_size_large: round($base_font_size * 1.25)
   font_size_small: round($base_font_size * 0.85)
   font_size_min: $base_font_size * 0.75
   #font_style: normal
-  border_color: eeeeee
+  border_color: d8d8d8
   border_radius: 4
-  border_width: 0.5
+  border_width: 1.0
 
 header:
   font_size: $base_font_size_small
@@ -45,13 +45,21 @@ header:
   valign: bottom
   image_valign: 50
   recto_content:
-    left: '{document-title}'
+    # left: '{document-title}'
     right: image:logo.png[width="60"]
   verso_content:
-    left: '{document-title}'
+    # left: '{document-title}'
+    right: image:logo.png[width="60"]
 
 vertical_rhythm: $base_line_height_length
 horizontal_rhythm: $base_line_height_length
+
+title_page:
+  font_size: floor($base_font_size * 1.8)
+
+title_page_title:
+  font_size: floor($base_font_size * 2.6)
+  font_color: A13C2B
 
 heading:
   align: left
@@ -71,8 +79,8 @@ heading:
   #line_height: 1.4
   # correct line height for Noto Serif metrics (comes with built-in line height)
   line_height: 1
-  margin_top: $vertical_rhythm * 0.4
-  margin_bottom: $vertical_rhythm * 0.9
+  # margin_top: $vertical_rhythm * 2.0
+  margin_bottom: $vertical_rhythm * 1.2
 
 literal:
   font_family: $base_font_family
@@ -82,8 +90,17 @@ literal:
 code:
   #font_family: $base_font_family
   font_family: 'KaiGen Gothic JP'
-  font_size: 9
+  font_size: floor($base_font_size * 0.8)
   background_color: f9f9f9
+
+sidebar:
+  background_color: f2f2f2
+  title:
+    font_color: 71352B
+
+admonition:
+  column_rule_color: $base_border_color
+  column_rule_width: $base_border_width
 
 table:
   background_color: $page_background_color

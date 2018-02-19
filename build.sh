@@ -13,8 +13,6 @@ set -x
   -r asciidoctor-pdf-cjk-kai_gen_gothic \
   -r asciidoctor-diagram \
   -D ./out \
-  -a pdf-stylesdir=./themes \
-  -a pdf-style=basic \
   ${TARGET}
 
 find ./src -name "diag-*.png" | xargs -I{} rm -fv {}
